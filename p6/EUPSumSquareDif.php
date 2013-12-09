@@ -16,32 +16,23 @@
  * @copyright Copyright (c) 2013 Eduardo Llorens
  */
 
-class EUPSumSquareDif
+/**
+ * Returns the difference between the sum of the squares of the first one hundred natural numbers and
+ * the square of the sum
+ * @return number
+ */
+function getSumSquareDifference()
 {
-    /**
-     * Returns the difference between the sum of the squares of the first one hundred natural numbers and
-     * the square of the sum
-     * @return number
-     */
-    function getSumSquareDifference()
-    {
-        $sum = 0;
-        $sum2 = 0;
-        for ($i = 1; $i <= 100; $i++) {
-            $pow = pow($i, 2);
-            $sum += $pow;
-            $sum2 += $i;
+    $sum = 0;
+    $sum2 = 0;
+    for ($i = 1; $i <= 100; $i++) {
+        $pow = pow($i, 2);
+        $sum += $pow;
+        $sum2 += $i;
 
-        }
-        $sum2 = pow($sum2, 2);
-        return $sum2 - $sum;
     }
-
-    /**
-     * Test case
-     */
-    public function run()
-    {
-        echo 'Difference between the sum of the squares of the first one hundred natural numbers and the square of the sum: '.$this->getSumSquareDifference();
-    }
+    $sum2 = pow($sum2, 2);
+    return $sum2 - $sum;
 }
+
+echo 'Difference between the sum of the squares of the first one hundred natural numbers and the square of the sum: '.getSumSquareDifference();
