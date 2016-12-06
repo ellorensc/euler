@@ -1,4 +1,7 @@
 <?php
+
+namespace euler\problem4;
+
 /**
  * Euler Project - Problem 4
  *
@@ -9,32 +12,32 @@
  * @version 1.0
  * @copyright Copyright (c) 2013 Eduardo Llorens
  */
-
-class EUPLargestPalindrome
+class Palindrome
 {
     /**
-     * Returns the largest palindrome made from the product of two 3-digit numbers
+     * Palindrome constructor.
      */
-    public function getLargestPalindrome()
+    public function __construct()
+    {
+    }
+
+    /**
+     * @return int
+     */
+    public function largestPalindrome()
     {
         $results = [];
 
         for ($x = 999; $x>899; $x--) {
             for ($y=999; $y>899; $y--) {
-                $xy = $x*$y;
+                $xy = $x * $y;
 
-                if(substr($xy, 0, (strlen($xy)/2)) == substr(strrev($xy), 0, (strlen($xy)/2)))
+                if(substr($xy, 0, (strlen($xy)/2)) == substr(strrev($xy), 0, (strlen($xy)/2))) {
                     $results[] = $xy;
+                }
             }
         }
-        return max($results);
-    }
 
-    /**
-     * Test case
-     */
-    public function run()
-    {
-        echo 'The largest palindrome made from the product of two 3-digit numbers is: '.$this->getLargestPalindrome();
+        return max($results);
     }
 }

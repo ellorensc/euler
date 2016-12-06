@@ -1,1 +1,8 @@
 Euler Project.
+
+.DS_Store
+.idea/
+
+vendor/
+
+composer.lock
