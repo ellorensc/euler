@@ -50,8 +50,11 @@ class SummationPrimes
         $result = 0;
 
         switch($this->method()) {
+            case Globals::NATURAL_LOOPING:
+                $result = $this->naturalLooping();
+                break;
             case Globals::ERATOSTHENES:
-                $result = $this->eratosthenesCalc();
+                $result = $this->sieveOfEratosthenes();
                 break;
         }
 
@@ -59,10 +62,35 @@ class SummationPrimes
     }
 
     /**
-     * Find the sum of all the primes below limit.
      * @return int
      */
-    private function eratosthenesCalc()
+    private function naturalLooping()
+    {
+        $sum = 5;
+        $n = 5;
+
+        while($n <= $this->limit()) {
+            if ($this->isPrime($n)) {
+                $sum += $n;
+            }
+
+            $n = $n + 2;
+
+            if ($n <= $this->limit() && $this->isPrime($n)) {
+                $sum += $n;
+            }
+
+            $n = $n + 4;
+        }
+
+        return $sum;
+    }
+
+    /**
+     * Find the sum of all the primes below limit using the sieve of Eratosthenes.
+     * @return int
+     */
+    private function sieveOfEratosthenes()
     {
         $sum = 2;
 

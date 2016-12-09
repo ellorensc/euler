@@ -15,7 +15,7 @@ class SummationPrimesTest extends PHPUnit_Framework_TestCase
     protected function setUp()
     {
         $this->limit = 2000000;
-        $this->method = 1000;
+        $this->method = 1001;
     }
 
     protected function tearDown()
@@ -53,6 +53,15 @@ class SummationPrimesTest extends PHPUnit_Framework_TestCase
     {
         $this->limit = null;
         $summationPrimes = new SummationPrimes($this->limit, $this->method);
+
+        $this->assertEquals(142913828922, $summationPrimes->calculate());
+    }
+
+    public function testWeFindTheCorrectSolutionThroughNaturalLoopingMethod()
+    {
+        $summationPrimes = new SummationPrimes($this->limit, $this->method);
+
+        $this->method = 1000;
 
         $this->assertEquals(142913828922, $summationPrimes->calculate());
     }
