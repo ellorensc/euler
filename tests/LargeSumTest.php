@@ -1,15 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ellorensc
- * Date: 14/12/16
- * Time: 16:26
- */
 
 namespace tests;
 
+use euler\problem13\LargeSum;
+use PHPUnit_Framework_TestCase;
 
-class LargeSumTest
+class LargeSumTest extends PHPUnit_Framework_TestCase
 {
+    public function testWeFindTheFirstTenDigitsOfTheSumOfOneHundredFiftyDigitNumbers()
+    {
+        $largeSum = new LargeSum();
 
+        $this->assertEquals(5.537376230, $largeSum->calculate());
+    }
 }
