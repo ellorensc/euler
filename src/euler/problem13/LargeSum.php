@@ -2,6 +2,16 @@
 
 namespace euler\problem13;
 
+/**
+ * Euler Project - Problem 13
+ *
+ * Large Sum
+ *
+ * Work out the first ten digits of the sum of one-hundred 50-digit numbers.
+ *
+ * @author Eduardo Llorens <ellorensc@gmail.com>
+ * @version 1.0
+ */
 class LargeSum
 {
     private $numbers = [
