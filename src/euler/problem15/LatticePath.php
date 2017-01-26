@@ -18,6 +18,14 @@ namespace euler\problem15;
 
 class LatticePath
 {
+    /**
+     * Brute force method
+     *
+     * @param $latticePaths
+     * @param $row
+     * @param $col
+     * @return mixed
+     */
     public function latticePaths($latticePaths, $row, $col)
     {
         if (!isset($latticePaths[$row])) {
@@ -48,5 +56,22 @@ class LatticePath
 
             return $latticePaths[$row][$col];
         }
+    }
+
+    /**
+     * Combinatorial method
+     *
+     * @param $size
+     * @return float|int
+     */
+    public function combinationalLatticePaths($size)
+    {
+        $result = 1;
+
+        for ($i=1; $i < $size; $i++) {
+            $result = $result * ($size + $i) / $i;
+        }
+
+        return $result*2;
     }
 }

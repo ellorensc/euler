@@ -11,6 +11,6 @@ class LatticePathsTest extends PHPUnit_Framework_TestCase
     {
         $latticePath = new LatticePath();
 
-        $this->assertEquals(137846528820, $latticePath->latticePaths([], 20, 20));
+        $this->assertEquals(137846528820, $latticePath->combinationalLatticePaths(20));
     }
 }
