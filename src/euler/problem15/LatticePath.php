@@ -15,7 +15,6 @@ namespace euler\problem15;
  * @author Eduardo Llorens <ellorensc@gmail.com>
  * @version 1.0
  */
-
 class LatticePath
 {
     /**
