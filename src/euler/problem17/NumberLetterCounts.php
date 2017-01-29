@@ -114,8 +114,6 @@ class NumberLetterCounts
         return $result;
     }
 
-
-
     public function hundredsLength()
     {
         $result = 0;
