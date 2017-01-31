@@ -4,7 +4,10 @@ namespace utilities;
 
 /**
  * Class Globals
+ *
  * @package src
+ * @author Eduardo Llorens <ellorensc@gmail.com>
+ * @version 1.0
  */
 class Globals
 {
