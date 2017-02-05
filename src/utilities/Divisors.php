@@ -11,7 +11,6 @@ namespace utilities;
  */
 class Divisors
 {
-
     /** @var array  */
     public $factor = [];
 
@@ -25,8 +24,72 @@ class Divisors
     }
 
     /**
+     * Divisors of a number accessor.
+     * @return array
+     */
+    public function divisors()
+    {
+        $divisors = [];
+
+        for($i = 1; $i < $this->num; $i++) {
+            if (($this->num % $i) == 0) {
+                $divisors[] = $i;
+            }
+        }
+
+        return $divisors;
+    }
+
+    /**
+     * A number n is called abundant if the sum of its proper divisors is great than n
+     * @return bool
+     */
+    public function isAbundant()
+    {
+        $result = 0;
+        $divisors = $this->divisors();
+
+        foreach ($divisors as $divisor) {
+            $result += $divisor;
+        }
+
+        return $result > $this->num;
+    }
+
+    /**
+     * A number n is called perfect if the sum of its proper divisors is equals to n
+     * @return bool
+     */
+    public function isPerfect()
+    {
+        $result = 0;
+        $divisors = $this->divisors();
+
+        foreach ($divisors as $divisor) {
+            $result += $divisor;
+        }
+
+        return $result == $this->num;
+    }
+
+    /**
+     * A number n is called deficient if the sum of its proper divisors is less than n
+     * @return bool
+     */
+    public function isDeficient()
+    {
+        $result = 0;
+        $divisors = $this->divisors();
+
+        foreach ($divisors as $divisor) {
+            $result += $divisor;
+        }
+
+        return $result < $this->num;
+    }
+
+    /**
      * Counts the divisors of a number.
-     *
      * @return int
      */
     public function countDivisors()
