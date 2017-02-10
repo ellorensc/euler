@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem11\LargestProduct;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class LargestProductTest
+ * @package tests
+ */
 class LargestProductTest extends PHPUnit_Framework_TestCase
 {
     private $matrix = [];

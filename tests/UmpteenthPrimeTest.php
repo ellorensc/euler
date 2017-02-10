@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem7\UmpteenthPrime;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class UmpteenthPrimeTest
+ * @package tests
+ */
 class UmpteenthPrimeTest extends PHPUnit_Framework_TestCase
 {
     /** @var  int */

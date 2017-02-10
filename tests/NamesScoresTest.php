@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem22\NamesScores;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class NamesScoresTest
+ * @package tests
+ */
 class NamesScoresTest extends PHPUnit_Framework_TestCase
 {
     /**

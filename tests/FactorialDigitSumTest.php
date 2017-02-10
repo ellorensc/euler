@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem20\FactorialDigitSum;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class FactorialDigitSumTest
+ * @package tests
+ */
 class FactorialDigitSumTest extends PHPUnit_Framework_TestCase
 {
     public function testWeResolveTheFactorialDigitSumForAGivenNumber()

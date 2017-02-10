@@ -2,10 +2,13 @@
 
 namespace tests;
 
-
 use euler\problem24\LexicographicPermutation;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class LexicographicPermutationsTest
+ * @package tests
+ */
 class LexicographicPermutationsTest extends PHPUnit_Framework_TestCase
 {
     public function testResolveTheMillionthLexicographicPermutation()

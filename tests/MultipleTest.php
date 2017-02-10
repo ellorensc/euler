@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem5\Multiple;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class MultipleTest
+ * @package tests
+ */
 class MultipleTest extends PHPUnit_Framework_TestCase
 {
     /** @var  int */

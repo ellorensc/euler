@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem8\Product;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class ProductTest
+ * @package tests
+ */
 class ProductTest extends PHPUnit_Framework_TestCase
 {
     /** @var  string */

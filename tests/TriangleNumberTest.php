@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem12\TriangleNumber;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class TriangleNumberTest
+ * @package tests
+ */
 class TriangleNumberTest extends PHPUnit_Framework_TestCase
 {
     /** @var  int */

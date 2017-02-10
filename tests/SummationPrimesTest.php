@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem10\SummationPrimes;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class SummationPrimesTest
+ * @package tests
+ */
 class SummationPrimesTest extends PHPUnit_Framework_TestCase
 {
     /** @var  int */

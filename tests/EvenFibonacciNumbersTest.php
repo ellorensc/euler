@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem2\EvenFibonacciNumbers;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class EvenFibonacciNumbersTest
+ * @package tests
+ */
 class EvenFibonacciNumbersTest extends PHPUnit_Framework_TestCase
 {
     /**

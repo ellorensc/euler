@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem9\PythagoreanTriplet;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class PythagoreanTripletTest
+ * @package tests
+ */
 class PythagoreanTripletTest extends PHPUnit_Framework_TestCase
 {
     /** @var  int */

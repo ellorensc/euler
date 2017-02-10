@@ -4,6 +4,10 @@ namespace tests;
 use euler\problem19\CountingSundays;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class CountingSundaysTest
+ * @package tests
+ */
 class CountingSundaysTest extends PHPUnit_Framework_TestCase
 {
     /**

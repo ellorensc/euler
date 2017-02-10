@@ -6,6 +6,10 @@ use euler\problem1\FindTheSumOfAllMultiples;
 use euler\problem1\FindTheSumOfAllMultiplesPolynomial;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class FindTheSumOfAllMultiplesTest
+ * @package tests
+ */
 class FindTheSumOfAllMultiplesTest extends PHPUnit_Framework_TestCase
 {
     /** @var  FindTheSumOfAllMultiples */

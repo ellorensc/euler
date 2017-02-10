@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem3\LargestPrimeFactor;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class LargesPrimeFactorTest
+ * @package tests
+ */
 class LargesPrimeFactorTest extends PHPUnit_Framework_TestCase
 {
     /**

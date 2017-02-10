@@ -5,6 +5,10 @@ namespace tests;
 use euler\problem6\Square;
 use PHPUnit_Framework_TestCase;
 
+/**
+ * Class SquareTest
+ * @package tests
+ */
 class SquareTest extends PHPUnit_Framework_TestCase
 {
     /** @var  int */
