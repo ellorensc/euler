@@ -10,10 +10,10 @@ use PHPUnit_Framework_TestCase;
  * @package tests
  */
 class DistinctPowersTest extends PHPUnit_Framework_TestCase
-{
-    /**
-     * @expectedException \Exception
-     */
+{    /**
+ * @expectedException \Exception
+ */
+
     public function testIfWeDoNotHaveSetTheCombinationBaseWeExpectAnException()
     {
         $distinctPowers = new DisctinctPowers(null, 100);
