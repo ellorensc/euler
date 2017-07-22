@@ -21,7 +21,7 @@ namespace euler\problem21;
  */
 class AmicableNumbers
 {
-    public function divisorSum($a)
+    public function sumOfProperDivisors($a)
     {
         $sum = 0;
 
@@ -39,12 +39,12 @@ class AmicableNumbers
         $sum = 0;
 
         for ($i = 1; $i < 10000; ++$i) {
-            $a = $this->divisorSum($i);
+            $a = $this->sumOfProperDivisors($i);
             if ($a == $i) {
                 continue;
             }
 
-            if ($i == $this->divisorSum($a)) {
+            if ($i == $this->sumOfProperDivisors($a)) {
                 $sum += $i;
             }
         }
